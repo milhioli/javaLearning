@@ -1,6 +1,10 @@
-import java.util.Scanner;
+// import java.util.Scanner;
+import java.util.Random;
 
 public class Main {
+    public Main() {
+    }
+
     public static void main(String[] args) {
         /* System.out.println("I love lasagnaa");
         System.out.println("And I know you love lasagna too.");
@@ -60,20 +64,129 @@ public class Main {
         //Scanner
         // A class to make our program able to have inputs.
 
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Enter your name: ");
+/*
+     Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter your name: ");
         String name = scanner.nextLine();
 
-        System.out.println("Enter your age: ");
+        System.out.print("Enter your age: ");
         int age = scanner.nextInt();
 
-        System.out.println("Hello " + name + "! How you doing?");
+        System.out.print("Enter your gpa: ");
+        double gpa = scanner.nextDouble();
+
+        System.out.print("You are a Student? (true/false): ");
+        boolean isStudent = scanner.nextBoolean();
+
+        System.out.println("\nHello " + name + "! How you doing?");
         System.out.println("You are " + age + " years old.");
+        System.out.println("Your gpa is " + gpa);
+        if(isStudent){
+            System.out.println("You are enrolled as a Student.");
+        }else{
+            System.out.println("You're NOT enrolled!");
+        }
 
+        // Scanner common issues
 
+       System.out.print("Your age: ");
+        int age = scanner.nextInt();
+        scanner.nextLine(); // fix the nextLine error
+
+        System.out.print("Your name: ");
+        String name = scanner.nextLine();
+
+        System.out.println("Your age is: " + age);
+        System.out.println("Your name is " + name);
 
 
         scanner.close(); // If we don't close this class, that won't behavior well.
+    }*/
+        // Calculate area of a rectangle
+
+/*        double width;
+        double height;
+        double area;
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Let's calculate the rectangle area!");
+        System.out.print("Enter the width: ");
+        width = scanner.nextDouble();
+        System.out.print("Enter the rectangle height: ");
+        height = scanner.nextDouble();
+
+        area = width * height;
+
+        System.out.println("\nThe area of this rectangle is: " + area + "cm²");
+*/
+        // Arithmetic operators
+
+        // +   -   /   *   %   **
+
+        //+=   -=    /=    %=    **=
+
+        //++    --
+
+        // P.E.M.D.A.S
+
+        // Conditionals
+
+ /*       String name;
+        int age;
+        boolean isBritish;
+
+        Scanner conditionals = new Scanner(System.in);
+
+        System.out.print("Enter your name: ");
+        name = conditionals.nextLine();
+        System.out.print("Enter your age: ");
+        age = conditionals.nextInt();
+        System.out.print("Are you British? (true/false): ");
+        isBritish = conditionals.nextBoolean();
+
+        //Group 1
+        if (name.isEmpty()){
+            System.out.println("You've forgotten to enter your name!");
+        } else{
+            System.out.println("Hello " + name + "!");
+        }
+        // Group 2
+        if (age >= 65){
+            System.out.println("You're a Senior!");
+        } else if (age >= 18){
+            System.out.println("You are an Adult!");
+        } else if (age == 0){
+            System.out.println("You are a baby!");
+        } else if (age < 0) {
+            System.out.println("You've not been born yet!");
+        } else{
+            System.out.println("You're a Child!");
+        }
+        // Group 3
+        if (isBritish){
+            System.out.println("I really appreciate your accent!");
+        } else{
+            System.out.println("Try to born again.");
+        }
+
+        conditionals.close(); */
+
+
+        //Random
+        Random dice = new Random();
+        Random headsTails = new Random();
+
+        int numb = dice.nextInt(1, 7);
+        boolean isHeads = headsTails.nextBoolean();
+
+        if (isHeads){
+            System.out.println("HEADS");
+        } else{
+            System.out.println("TAILS");
+        }
+
+        System.out.println("The dice number is: " + numb);
+
     }
 }
