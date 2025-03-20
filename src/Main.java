@@ -2,7 +2,8 @@
 import java.util.Random;
 
 public class Main {
-    public Main() {
+    public static void math(String[] args) {
+        System.out.println();
     }
 
     public static void main(String[] args) {
@@ -173,7 +174,7 @@ public class Main {
         conditionals.close(); */
 
 
-        //Random
+/*        //Random
         Random dice = new Random();
         Random headsTails = new Random();
 
@@ -187,6 +188,34 @@ public class Main {
         }
 
         System.out.println("The dice number is: " + numb);
+
+ */
+        //Math Class
+
+ /*       System.out.println(Math.pow(4, 3));
+        System.out.println(Math.PI);
+        System.out.println(Math.E);
+        System.out.println(Math.sqrt(5));
+        System.out.println(Math.max(10, 20));
+        System.out.println(Math.min(35, 2));
+        System.out.println(Math.floor(4.30));
+        System.out.println(Math.ceil(4.30));
+*/
+        //printf
+        //%[specifier-character][flags][width][.precision]
+
+        String name = "Sonic"; //%s
+        char firstLetter = 'S'; //%c
+        int age = 120; //%d
+        double weight = 2.5; //%f
+        boolean isLegendary = true; //%b
+
+        System.out.printf("Hello %s!\n", name);
+        System.out.printf("Your first letter name is %c!\n", firstLetter);
+        System.out.printf("You're %d years old.\n", age);
+        System.out.printf("You're %f pounds! Do you need some help %s?", weight, name);
+
+
 
     }
 }
