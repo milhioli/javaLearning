@@ -1,10 +1,7 @@
 // import java.util.Scanner;
-import java.util.Random;
+// import java.util.Random;
 
 public class Main {
-    public static void math(String[] args) {
-        System.out.println();
-    }
 
     public static void main(String[] args) {
         /* System.out.println("I love lasagnaa");
@@ -208,12 +205,14 @@ public class Main {
         char firstLetter = 'S'; //%c
         int age = 120; //%d
         double weight = 2.5; //%f
-        boolean isLegendary = true; //%b
+        boolean isALegend = true; //%b
 
         System.out.printf("Hello %s!\n", name);
         System.out.printf("Your first letter name is %c!\n", firstLetter);
         System.out.printf("You're %d years old.\n", age);
         System.out.printf("You're %f pounds! Do you need some help %s?", weight, name);
+        System.out.printf("Lengend: %b", isALegend);
+
 
 
 
